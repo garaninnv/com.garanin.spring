@@ -18,6 +18,7 @@ public class Test1 {
             session.beginTransaction();
             session.save(emp);
             session.getTransaction().commit();
+            System.out.println("Done!");
         }
         finally {
             factory.close();
